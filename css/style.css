@@ -1,0 +1,2195 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none!important;
+    text-decoration: none!important;
+    font-family: 'Lato'!important;
+    outline: none!important;
+} 
+
+
+/* 
+
+    Navigation Bar Start
+
+*/
+header, .navbar, .navbar-nav{
+    width: 100%;
+    min-height: 60px;
+    padding: 0;
+}
+
+nav  .logo img{
+    width: 80%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-item{
+    padding: 0 20px;
+    transition: .1s;
+}
+
+.navbar-nav li:hover{
+    background-color: rgba(20, 43, 58, 0.03);
+    border-bottom: 4px solid #142b3a;
+    line-height: 60px;
+    cursor: pointer;
+}
+nav .active{
+    background-color: rgba(20, 43, 58, 0.03);
+    border-bottom: 4px solid #142b3a;
+    cursor: pointer;
+}
+nav .f-menu{
+    display: none;
+}
+.nav-item a{
+    font-size: 16px;
+    line-height: 40px;
+    color: #142b3a!important;
+}
+.active a{
+    font-weight: 900;
+    font-style: normal;
+    color: #142b3a;
+}
+
+
+
+/* 
+    Navigation Bar End
+*/
+
+
+/* 
+    Hero Start
+*/
+
+.hero{
+    width: 100%;
+    height: 300px;
+    color: #ffffff;
+    position: relative;
+}
+.slide_photo{
+    width: 100%;
+    height:300px!important;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right, .left{
+    height: 300px; 
+    display: flex;
+    align-items: flex-end;
+}
+
+.left h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    bottom: 90px;
+}
+
+
+
+#date{
+    font-size: 20px;
+    letter-spacing: normal;
+    word-spacing: 2px;
+}
+.etket-03 {
+    width: 108px;
+    height: 108px;
+    object-fit: contain;
+  }
+
+/* 
+    Hero end
+*/
+
+/* 
+
+  FILTER START HERE
+
+*/
+.filter{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.filter h3{
+    margin: 10px 0;
+    color: #9e9e9e;
+    font-size: 24px;
+}
+.filter ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.filter ul .filter-item{
+    border-radius: 10px;
+    border: solid 1px #ececec;
+    font-size: 20px;
+    color: #c1c1c1;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: .05s;
+}
+.filter ul .filter-item:hover, 
+.filter ul .filter-item:focus,
+.filter .active_filter {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border:none!important;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  color: #142b3a!important;
+}
+
+.filter ul li:first-child{
+    padding-left: 0;
+}
+.filter ul li:last-child{
+    padding-right: 0;
+}
+
+.col-25{
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 14.666667%;
+    margin:0 1%;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+  FILTER END HERE
+
+*/
+
+
+
+  /* 
+    Interior Start Here
+  */
+
+
+  .interior{
+      width: 100%;
+      height: auto;
+  }
+ 
+  .tab-body .filter-body [tab] {
+    display: none;
+  }
+
+  .interior .filter-body [tab].active{
+    display: flex;
+    background: unset;
+    border: unset;
+  }
+  .interior .game_info [tab].active{
+    display: block;
+    }
+
+  .interior ul{
+      width: 100%;
+      height: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+      margin: 40px 0;
+      overflow: hidden;
+      padding-left: 0;
+      flex-direction: row;
+      transition: .3s;
+  }
+
+  .interior ul li:last-child{
+      border: none!important;
+  }
+  
+  .row_shadow ul:hover{
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  .interior ul li, .interior ul li h2, .interior .address p{
+      color: #142b3a;
+  } 
+  .interior .address p{
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 18px;
+}
+  .interior ul li h2{
+      font-weight: bold;
+      font-size: 36px;
+  }
+  .interior ul .score p{
+      font-size: 14px;
+      font-weight: 300;
+      color: #797979;
+      padding: 0;
+      margin: 0;
+  }
+  .interior .number, .interior .hotel_logo, 
+  .interior .address, .interior .ratings,
+  .interior .score, .interior .visit,
+  .exterior .bonus, .exterior .active_players,
+  .exterior .min_deposit{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border-right: 1px solid #ececec;
+  }
+  .interior .hotel_logo{
+      padding: 10px 30px;
+  }
+  .interior .hotel_logo a img{
+      width: 140px;
+      /* height: 55px; */
+  }
+  .interior .rate_message{
+      margin: 0px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #efce4a;
+      position: absolute;
+      /* display: none; */
+  }
+  .interior .ratings,
+  .interior .score{
+      flex-direction: column;
+      justify-content: center;
+  }
+  .interior .ratings .rated2{
+    display: flex;
+    flex-direction: row;
+  }
+  .interior .ratings .rating {
+      /* width: 100%!important; */
+      font-size: 23px;
+      margin-left: -15px;
+      color: #efce4a;
+  }
+
+
+
+  
+    .interior .rated2 p{
+        font-size: 14px;
+        color: #797979;
+        padding-right: 30px;
+        margin: 0;
+    }
+    .interior .rated2 p strong{
+        font-weight: bold;
+        color: #efce4a;
+    }
+
+    .interior .rated2 a{
+        font-size: 14px;
+        color: #797979;
+        font-weight: 300;
+        text-decoration: underline!important;
+    }
+
+    .interior .visit a{
+        width: 190px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        color: #fff;
+        margin: 0 30px;
+        border-radius: 10px;
+        background-color: #00b948;
+        letter-spacing: 0.5px;
+    }
+
+
+
+    /* 
+        REVIEW START HERE
+    
+    */
+    .review .review_shadow{
+        border-radius: 20px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+    }
+    
+    .review  ul{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 0;
+    }
+    .review  ul:hover{
+        box-shadow: 0;
+    }
+    /* .review .review_image, .review .review_content{
+        box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
+    } */
+    .review .review_image{
+        width: 100%;
+        height: 550px;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }
+
+    .review .review_content{
+        padding: 50px 60px 0 50px;
+    }
+    .review .review_content h1{
+        font-weight: bold;
+        color: #142b3a;
+    }
+    .review .review_content p{
+        font-size: 20px;
+        color: #142b3a;
+        line-height: 1.4;
+    }
+
+    .review .review_content .visit a{
+        margin: 35px 0 70px;
+        border: none!important;
+    }
+
+
+
+
+
+    /* 
+        REVIEW END HERE
+    
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 
+    Interior End Here
+  */
+
+    /* 
+
+
+/* 
+
+    exteroir start here
+
+*/
+.exterior .bonus p, .exterior .active_players p,
+  .exterior .min_deposit p
+{
+    margin: 0;
+}
+.exterior_row_header{
+    width: 100%;
+}
+.exterior_row_header p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #142b3a;
+    margin: 10px 0 0;
+    text-align: center;
+}
+ .exterior_mobile_spans{
+    display: none;
+}
+.exterior  ul {
+    border: none;
+}
+.exterior  ul:first-child, .interior  ul:first-child{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+    /* 
+    
+        GAMES START HERE
+    
+    */
+
+    .game_info .active{
+        background-color: unset;
+        border: none;
+    }
+    .game_info p.game-text{
+        /* height: 59px; */
+        font-size: 20px;
+        overflow: hidden;
+        color: #9e9e9e;
+        font-weight: 300;
+        line-height: 1.3;
+        margin: 5px 0 0px;
+        cursor: default;
+    }
+
+    .game_info .game-text{
+        display: none;
+        
+    }
+    .game_info .game-text:first-child{
+        display: block;
+    }
+
+
+    .game_info .game-text button{
+        border: none;
+        background: transparent;
+        font-size: 20px;
+        color: #142b3a;
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+    }
+    .game_info .game-text .hide{
+        display: none;
+    }
+
+
+
+    /* 
+    
+        GAMES EMD HERE
+    
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    
+     =========   HOW WE SCORE START HERE   =========
+    
+    
+    */
+    
+  
+
+    .scores{
+        width: 100%;
+        height: auto;
+        padding-bottom:  80px;
+        margin-top: 100px;
+    }
+   
+   
+    .scores .rectangle{
+        width: 100%;
+        height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+        background-color: #ffffff;
+        padding-top: 50px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .scores .rectangle:hover{
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.18);
+    }
+  
+    .scores .rectangle p{
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #666666;
+        padding-top: 45px;
+    }
+    .scores .rectangle p:nth-child(11), .scores .rectangle p:nth-child(15), .scores .rectangle p:last-child{
+        line-height: 1.4;
+    }
+  
+    /* popup */
+
+     .popup {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .6);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .popup-content {
+            height: 260px;
+            background-color: #fff;         
+            border-radius: 20px;   
+        }
+        .popup .left-pop{
+            height: 260px;
+            border-right: 1px solid #ececec;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .popup .left-pop img:last-child{
+            display: none;
+        }
+       .popup .left-pop h3{
+           text-align: center;
+           font-size: 20px;
+           color: #666666;
+           margin-top: 20px;
+       }
+       .popup .right-pop{
+           height: 260px;
+           padding: 20px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+       .popup .right-pop img{
+           position: absolute;
+           top: 20px;
+           right: 25px;
+           cursor: pointer;
+       }
+       .popup .right-pop p{
+        font-size: 20px;
+        line-height: 1.5;
+        color: #9e9e9e;
+       }
+
+    /* 
+    
+     =========   HOW WE SCORE END HERE   =========
+    
+    
+    */
+
+
+
+
+
+
+
+
+
+       /* 
+    
+     =========   PRIVACY POLICY AND COOKIE START HERE   =========
+    
+    
+    */
+
+    .privacy, .cookie{
+        width: 100%;
+        background-color: #fafafa;
+        padding: 60px 0 0;
+        text-align: left;
+    }
+    .privacy h2, .cookie h2{
+        font-weight: bold;
+        font-size: 26px;
+        color: #666666;
+        margin: 0;
+    }
+    .privacy p, .cookie p{
+        font-size: 20px;
+        line-height: 1.5;
+        color: #9e9e9e;
+        font-weight: normal;
+        padding: 35px 0 50px;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* 
+    
+     =========   PRIVACY POLICY AND COOKIE END HERE   =========
+    
+    
+    */
+
+
+
+
+
+
+
+    /* 
+    
+     =========   ABOUT US START HERE   =========
+    
+    
+    */
+
+    .aboutUs{
+        width: 100%;
+        background-color: #fafafa;
+        padding-top: 60px;
+        text-align: left; 
+    }
+
+    .aboutUs h1{
+        font-size: 26px;
+        font-weight: bold;
+        color: #666666;
+        padding-bottom: 35px;
+        margin: 0;
+        font-family: 'Lato-Regular';
+    }
+    .aboutUs p{
+        font-size: 20px;
+        line-height: 1.5;
+        color: #9e9e9e;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+    .aboutUs p strong {
+        color: #767676;
+        font-family: 'Lato-Bold';
+    }
+
+    /* 
+    
+     =========   ABOUT US END HERE   =========   
+    
+    */
+    /* 
+    
+     =========   CONTACT US START HERE   =========
+   
+    */
+
+    .contact{
+        border-radius: 20px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08); 
+        margin: 100px auto 120px;
+        padding:0 105px;
+    }
+
+    .contact h2{
+        font-size: 30px;
+        font-family: 'Lato-Bold';
+        font-weight: bold;
+        color: #142b3a;
+        padding-top: 55px;
+    }
+    .contact p{
+        font-family: 'Lato';
+        font-size: 20px;
+        line-height: 1.5;
+        color: #9e9e9e;
+    }
+    .contact p strong{
+        font-family: 'Lato-Regular';
+        font-size: 20px;
+        line-height: 1.5;
+        color: #0c2b3b;
+    }
+
+
+     
+    .contact form{
+        margin-top: 50px;
+    }
+    .contact form input, .contact form textarea{
+        border: 1px solid #ececec;
+        box-shadow: none;
+        
+    }
+    .contact form input:focus, .contact form textarea:focus{
+        box-shadow: none;
+        border: 1px solid #ececec;
+        
+    }
+    .contact form input:focus, .contact form textarea:focus,
+    .subscribe input[type="email"]:focus{
+        border: 1px solid #767676;
+    }
+    
+    .contact form input::placeholder, .contact form textarea::placeholder{
+        color: #9e9e9e;
+    }
+    .contact form input[type="submit"]{
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #00b948;
+        transition: .3s;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .contact form input[type="submit"]:hover,
+     .contact form input[type="submit"]:focus,
+    .interior .visit a:hover, .interior .visit a:focus,
+   .review .visit a:hover,.review .visit a:focus{
+        background-color: #142b3a;
+    }
+
+    /* 
+    
+     =========   CONTACT US END HERE   =========  
+    
+    */
+    /* 
+    
+     =========   TERMS OF USE START HERE   =========
+        
+    */
+
+    .terms{
+        width: 100%;
+        background-color: #ffffff;
+        padding: 100px 0;
+    }
+    .terms .term_container{
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+        margin:20px 0;
+        overflow: hidden;
+    }
+    .terms h4{
+        font-size: 20px;
+        color: #444444;
+    }
+    .terms p{
+        font-size: 20px;
+        color: #9e9e9e;
+        line-height: 30px;
+    }
+    .terms .term_header{
+        padding-left: 20px;
+        height: 80px;
+        background-color: #fff;
+    }
+    .terms .icon_holder{
+        width: 70px;
+        height: 80px;
+        /* overflow: hidden; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .terms .left_border{
+        width: 3px;
+        height: 80px;
+        border-left: 1px solid #ececec;
+        
+    }
+    .terms img{
+        width: 20px;;
+        height: 20px;
+        transition: .3s;
+        margin: 0 auto;
+    }
+
+    .terms .toggle_term_icon{
+        transform: rotate(180deg);
+    }
+
+    .terms .term_body{
+        padding: 30px 40px 25px;
+        background-color: #fafafa;
+    }
+
+
+    /* 
+    
+     =========   TERMS OF USE END HERE   =========
+    
+    
+    */
+
+
+/* 
+  subscribe start
+*/
+  .subscribe{
+      width: 100%;
+      padding: 80px 0;
+      background-color: #fafafa;
+  }
+
+
+.subscribe p.success-message{
+    font-size: 16px;
+    font-weight: bold;
+}
+  .subscribe h2{
+      font-size: 30px;
+      color: #142b3a;
+      font-weight: bold;
+      margin-bottom: 0px;
+  }
+  .subscribe p{
+      color: #797979;
+      font-size: 20px;
+      margin-bottom: 30px;
+  }
+
+  .subscribe form input{
+      float: left;
+  }
+  .subscribe form input[type="email"]{
+      width: 402px;
+      height: 50px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-right: none!important;
+      border: 1px solid #ececec;
+      padding: 12px 18px 14px;
+      color: #9e9e9e;
+  }
+  .subscribe form input[type="email"]:focus{
+      border-color: #ececec!important;
+  }
+  .subscribe form input[type="email"]:focus::placeholder{
+      color: #ececec!important;
+  }
+  .subscribe form input[type="email"]::placeholder{
+      color: #ececec;
+      display: flex;
+      justify-content: space-around;
+  }
+  .sub_email::placeholder{
+      color: red!important;
+  }
+  .subscribe form input[type="submit"]{
+    width: 210px;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #00b948;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: .3s;
+  }
+  .subscribe form input[type="submit"]:hover{
+      background-color: #142b3a;
+  }
+
+/* 
+  subscribe end
+*/
+
+
+
+/* 
+  Gambl start
+*/
+
+    .gambl{
+        width: 100%;
+        background-color: #142b3a;
+        padding-top: 63px;
+        padding-bottom: 63px;
+    }
+    .gambl p{
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .gambl button{
+        display: none;
+    }
+ /*   
+    Gamble end
+
+*/
+
+
+/* 
+    Footer start
+*/
+
+footer{
+    width: 100%;
+    height: 80px;
+    padding: 28px 0;
+}
+footer .copyright{
+    color: #142b3a;
+    font-size: 20px;
+    font-weight: normal;
+}
+footer .footer-links li{
+    padding-left: 58px;
+}
+
+footer .footer-links a{
+    color: #142b3a;
+    font-size: 20px;
+
+}
+
+footer .f-active{
+    font-weight: 900;
+}
+
+
+
+@media screen and (max-width: 991.98px) { 
+    header, .navbar, .navbar-nav{
+        width: 100%;
+        min-height: 40px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    .nav-item a {
+        font-size: 14px;
+    }
+    nav .f-menu{
+        display: block;
+    }
+    nav .active{
+        border: none;
+    }
+    .navbar-nav li:hover{
+        border: unset;
+    }
+    .navbar-nav .nav-item{
+        text-align: center;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+    .nav-line{
+        width: 25px;
+        margin: 5px 0;
+        height: 3px;
+        background: #142b3a;
+    }
+    .nav-line:last-child{
+        margin: 0;
+    }
+
+
+    /* hero */
+    .hero{
+        width: 100%;
+        height: 200px;
+    }
+
+    .hero .slide_photo{
+        width: 100%;
+        height: 200px!important;
+    }
+    .hero .left, .hero .right{
+        height: 200px;
+    }
+    .hero h1{
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+    }
+    .hero .right img{
+        width: 95px;
+        height: 95px;
+        margin-bottom: 20!important;
+        padding: 0;
+    }
+    .hero  #date{
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* filter */
+
+    .filter h3{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .filter li.filter-item{
+        font-size: 14px;
+        border-radius: 7px;
+    }
+
+
+
+
+    /* exterior_row_header */
+    .exterior_row_header p{
+        font-size: 14px;
+        margin: 15px 0 0px;
+    }
+
+    /* interior */
+    .interior ul{
+        height: 100px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .interior .hotel_logo{
+        padding: 0 10px;
+    }
+    ul .hotel_logo img, .tri201310102442653-jpg, .f0312ef431, 
+    .NLC_logo, .imagesoptimizephp_pdcimagedf84a75f4665c6d8edd28300a99e9317,
+    .imagesoptimizephp_pdcimage05a28b0265dcf2cf6518b814d69869f2,
+    .imagesoptimizephp_pdcimage59ed304fa879f24982c5ca75c12ea35a,
+    .imagesoptimizephp_pdcimage5959ef7836a73fa8c3be7ead3372a263,
+    .imagesoptimizephp_pdcimage6c336a9050501ae46467b88889e4286f{
+        width: 105px!important;
+        height: 45px!important;
+    }
+    
+    .interior .address p{
+        font-size: 13px;
+        padding-left: 15px;
+    }
+    .ratings .rate_message{
+        font-size: 12px;
+        top: 15px!important;
+    }
+   
+    .rated2 {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .rated2 p, .rated2 a{
+        font-size: 12px!important;
+    }
+    .rated2 p{
+        padding-right: 0!important;
+    }
+
+
+    .score h2{
+        font-size: 24px!important;
+        margin-bottom: 0px!important;
+    }
+    .score p{
+        font-size: 11px!important;
+    }
+    .visit a{
+        height: 40px!important;
+        font-size: 12px;
+        margin:0 20px!important;
+        border-radius: 5px!important;
+    }
+
+    /* exterior */
+    .exterior .active_players p,
+    .exterior .bonus p,
+    .exterior .min_deposit p{
+        font-size: 13px;
+    }
+    .exterior .visit a{
+        margin: 10px!important;
+    }
+
+    /* games */
+    .game_info .game-text{
+        height: auto!important;
+        font-size: 14px!important;
+        margin: 10px 0px 0px!important;
+    }
+
+    .game_info .game-text button{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    /* review */
+    .review .review_content{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* popup */
+    .popup-content {
+        height: 200px;
+        border-radius: 10px;
+    }
+    .popup .left-pop, .popup .right-pop{
+        height: 200px;;
+    }
+    .popup .left-pop img{
+        width: 50px;
+    }
+    .popup .left-pop h3{
+        font-size: 16px;
+    }
+    .popup .right-pop p{
+        font-size: 12px;
+    }
+    .popup .right-pop img{
+        width: 16px;
+    }
+
+    /* score */
+
+    .scores{
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    .scores .rectangle{
+        height: 150px;
+        padding-top: 0;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .scores .rectangle img {
+        width: 45px;
+    }
+    .scores .rectangle .awardHeight{
+        height: 47px;
+    }
+   
+    .scores .rectangle p{
+        padding-top: 20px;
+        margin-bottom: 0;
+        font-size: 12px!important;
+    }
+
+    /* popUp */
+   
+    
+    /* gambl */
+    .gambl{
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+    .gambl p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .gambl p:last-child{
+        margin-bottom: 0;
+    }
+
+
+    /* subscribe */
+    .subscribe{
+        padding: 30px;
+    }
+    .subscribe h2{
+        font-size: 24px;
+    }
+    .subscribe p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .subscribe input[type="email"]{
+        width: 300px!important;
+        height: 40px!important;
+        border-top-left-radius: 5px!important;
+        border-bottom-left-radius: 5px!important;
+    }
+    .subscribe input[type="submit"]{
+        width: 105px!important;
+        height: 40px!important;
+        border-top-right-radius: 5px!important;
+        border-bottom-right-radius: 5px!important;
+    }
+
+
+    .subscribe  p.success-message {
+        font-size: 14px;
+    }
+
+    /* footer */
+    footer{
+        height: auto;
+        padding: 10px 0;
+    }
+    footer .footer-links li a, footer .copyright{
+        font-size: 14px;
+    }
+    footer .copyright{
+        margin: 0;
+    }
+    footer .footer-links{
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+    }
+    footer .footer-links li{
+        padding-left: 27px;
+    }
+
+    /* cookie, privacy, contact, about us*/
+    .cookie, .privacy, .aboutUs {
+        padding-top: 30px;
+    }
+    .cookie h2, .privacy h2, 
+    .contact h2, .aboutUs h1{
+        font-size: 20px;
+    }
+    .cookie p, .privacy p, 
+    .contact p, .aboutUs p{
+        font-size: 16px;
+        padding: 10px 0 20px;
+    }
+
+    /* contact */
+    .contact{
+        margin: 40px 0;
+        padding: 30px 0;
+    }
+    .contact h2, .contact p{
+        padding: 0;
+        margin: 0;
+    }
+    .contact p strong, .aboutUs p strong{
+        font-size: 18px;
+    }
+    .contact form{
+        margin: 20px 0 0;
+    }
+    .contact form input[type="submit"]{
+        margin: 0;
+    }
+    /* about us */
+    .aboutUs h1{
+        padding-bottom: 10px!important;
+    }
+    .aboutUs p{
+        padding: 0px 0 20px!important;
+    }
+
+    .terms{
+        padding: 40px 0 30px;
+    }
+    .terms .term_header{
+        height: 60px;
+        overflow: hidden;
+        padding-left: 30px;
+    }
+    .terms .term_header h4{
+        font-size: 18px;
+    }
+    .terms .term_body{
+        padding: 15px 20px;
+    }
+    .terms .term_body p{
+        font-size: 14px!important;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+    footer .f-menu{display: none;}
+ }
+
+
+
+
+
+
+
+
+
+@media screen and  (max-width:766px){
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    .nav-item a {
+        font-size: 14px;
+        padding: 0;
+    }
+    
+    nav .f-menu{
+        display: block;
+    }
+    nav .active{
+        border: none;
+    }
+    .navbar-nav li:hover{
+        border: unset;
+    }
+    .navbar-nav .nav-item{
+        text-align: center;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+    .nav-line{
+        width: 25px;
+        margin-bottom: 5px;
+        height: 3px;
+        background: #142b3a;
+    }
+    .nav-line:last-child{
+        margin: 0;
+    }
+    nav .logo{
+        width: 110px;
+    }
+   
+    /* Slide Photo start*/
+
+    .hero{
+        width: 100%;
+        height: 170px!important;
+        position: relative;
+    }
+.hero .slide_photo{
+    height: 170px!important;
+
+}    
+   
+    .hero .right, .hero .left{
+        width: 100%;
+        height: 85px;
+        
+    }
+   
+    .left h1{
+        font-size: 14px;
+        bottom: 40px;
+    }
+    
+   .box{
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: flex-end
+   }
+    .box p{
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 17px;
+    }
+    .box img{
+        width: 55px;
+        height: 55px;
+    }
+
+    #date{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* Slide Photo end */
+
+
+
+
+    /* 
+    
+        FILTER START HERE
+    
+    */
+    .filter{
+        margin: 5px 0 0;
+        
+    }
+    .filter h3{
+        display: none;
+    }
+    .filter ul .filter-item{
+        padding: 8px 15px;
+        font-size: 12px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+    }
+
+
+    .filter ul li:first-child{
+        padding-left: 15px;
+    }
+    .filter ul li:last-child{
+        padding-right: 15px;
+    }
+ 
+    .filter .active_filter {
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5)!important;
+      background-color: #ffffff;
+      border:none!important;
+    }
+
+
+    .col-50{
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 31.333333%;
+        margin: 10px 1% 0;
+    }
+
+
+
+
+
+    /* 
+    
+        FILTER END HERE
+    
+    */
+
+
+    .exterior_row_header{
+        display: none;
+    }
+
+
+    /* 
+    
+        INTERIOR TABLE START HERE
+    
+    */
+    .interior{
+        margin-bottom: 15px;
+        height: auto;
+    }
+   .interior ul{
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+        padding-bottom: 10px;
+        margin: 0 0 10px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+   .interior .number{
+       display: none;
+   }  
+   .interior .visit
+   .interior .number, .interior .hotel_logo, 
+    .interior .address, .interior .ratings,
+    .interior .score, .interior .visit{
+        border: none;
+    }
+    /* LOGOS OF HOTELS */
+ 
+    .interior .hotel_logo{
+        padding: 10px;
+        border-bottom: 1px solid #ececec;
+        justify-content: flex-start;
+    }
+    .interior ul:first-child,
+    .exterior ul:first-child{
+        margin-top: 10px;
+    } 
+    .interior ul li .hotel_logo:nth-child(3){
+        width: 100%;
+    }
+
+    .interior .hotel_logo img{
+        width: 140px!important;
+        height: 55px;
+    } 
+  
+    
+    .interior .address{
+        align-self: flex-start;
+        padding-top: 10px;
+        height: 66px;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .interior .address p{
+        padding: 0 15px 0 0;
+        font-size: 12px;
+    }
+    .interior .address, .interior .visit{
+        font-size: 12px;
+    }
+    .interior .ratings{
+        padding: 10px 0px 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 200!important;
+    }
+    .ratings .rate_message{
+        /* display: block!important; */
+        font-size: 12px;
+        left: 10px;
+        top: 0!important;
+    }
+    
+    .rated2 {
+        width: 50%;
+    }
+    .interior .ratings .rated2 p{
+        font-size: 14px;
+        /* margin-left: 25px; */
+    }
+    
+    .interior .ratings .rated2 p strong{
+        padding-left: 5px;
+    }
+    .interior .score {
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+    .interior .score h2{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        padding-left: 5px;
+    }
+    .interior .score p{
+        font-size: 10px!important;
+        margin: 0;
+        padding: 0;
+    }
+    .interior .visit{
+        padding-right: 15px;
+    }
+    .interior .visit a{
+       width: 100%!important;
+       height: 30px;
+       border-radius: 4px;
+       margin: 0;
+   }
+
+  
+
+    /* 
+        REVIEW START HERE
+    
+    */
+    .review .review_shadow{
+        border-radius: 10px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+    }
+    .review  ul{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 0;
+        margin-top: 21px;
+          box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+    }
+    .review .review_shadow  .disable_shadow:hover{
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08)!important;
+    }
+    .review .review_image{
+        width: 100%;
+        height: 160px;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }
+    
+    .Combined-Shape {
+        width: 57px;
+        height: 45px;
+        object-fit: contain;
+    }
+    .interior .address{
+        justify-content: flex-start;
+    }
+    
+    .review .review_content{
+        padding: 15px 18px 30px 17px;
+    }
+    .review .review_content h1{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .review .review_content p{
+        font-size: 10px;
+        line-height: 1.8;
+        margin: 0;
+    }
+    .review .review_content .visit{
+        margin-top: 20px;
+    }
+    .review .review_content .visit a{
+        /* margin-top: 16px; */
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: bold;
+        width: 148px;
+        height: 30px;
+        border-radius: 4px;
+    }
+
+    /* 
+        REVIEW END HERE
+    
+    */
+
+  
+    /* 
+    
+        INTERIOR TABLE END HERE
+    
+    */
+
+
+    /* 
+    
+        EXTERIOR TABLE START HERE
+    
+    */
+
+    
+    .exterior .bonus, .exterior .active_players,
+    .exterior .min_deposit{
+        border: none;
+    }
+    .exterior .bonus{
+        height: 66px;
+        border-bottom: 1px solid #ececec;
+        justify-content: flex-start;
+    }
+
+    .exterior ul li:first-child{
+        display: none;
+    }
+    .exterior ul li:nth-child(2){
+        order: 2;
+    }
+    .exterior ul li:nth-child(3){
+        order: 3;
+    }
+    .exterior ul li:nth-child(4){
+        order: 4;
+        margin-bottom:10px;
+    }
+    .exterior ul li:nth-child(5){
+        order: 5;
+        margin-bottom: 10px;
+    }
+    .exterior ul li:nth-child(6){
+        order: 3;
+    }
+    .exterior ul li:nth-child(7){
+        order: 7;
+    }
+    .exterior ul li:nth-child(8){
+        order: 8;
+    }
+    .exterior_mobile_spans{
+        display: inline-block;
+        font-size: 12px;
+    }
+    .exterior .active_players {
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+    .exterior .min_deposit, .exterior .active_players{
+        border-top: 1px solid #ececec;
+    }
+
+    /* 
+    
+        EXTERIOR TABLE EMD HERE
+    
+    */
+
+
+
+
+    /* 
+    
+        GAMES START HERE
+    
+    */
+
+    .game_info p.game-text{
+        font-size: 12px;
+        line-height: 1.33;
+        margin: 16px 0 21px;
+    }
+    .game_info .game-text button{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    /* 
+    
+        GAMES EMD HERE
+    
+    */
+
+
+
+
+     /* 
+    
+     =========   HOW WE SCORE START HERE   =========
+      
+    */
+    
+    .scores{
+        padding: 20px 10px;
+        margin: 0;
+    }
+    .scoreMarginTop{
+        margin-top: 10px;
+
+    }
+    .scores .rectangle{
+        width: 100%;
+        height: 130px;
+        border-radius: 5px;
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+        margin: 0 0 15px;
+    }
+   
+    .scores .rectangle img{
+        width: 53px;
+        height: 53px;
+    }
+    .scores .rectangle p{
+        font-size: 12px;
+        font-weight: 300;
+        padding: 22px 0; 
+    }
+
+    
+    /* popup */
+    .popup-content {
+        height: 260px;
+        background-color: #fff;         
+        border-radius: 10px;   
+    }
+    .popup .left-pop{
+        height: 90px;
+        border-right: 0;
+        border-bottom: 1px solid #ececec;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .popup .left-pop img{
+        width: 45px;
+    }
+    .popup .left-pop img:last-child{
+        display: block;
+        width: 16px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+   .popup .left-pop h3{
+       font-size: 12px;
+       display: block;
+       margin-left: 25%;
+   }
+   .popup .right-pop{
+       height: 170px;
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+   .popup .right-pop img{
+       display: none;
+   }
+   .popup .right-pop p{
+    font-size: 12px;
+    line-height: 1.5;
+   }
+
+ 
+
+
+
+       /* 
+    
+     =========   PRIVACY POLICY  AND COOKIE START HERE   =========
+    
+    
+    */
+
+    .privacy, .cookie{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .privacy h2, .cookie h2{
+        font-size: 16px;
+    }
+    .privacy p, .cookie p{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 10px 0;
+    }
+
+
+
+
+
+
+    /* 
+    
+     =========   ABOUT US START HERE   =========
+    
+    
+    */
+
+
+
+
+    .aboutUs {
+        width: 100%;
+        padding-top: 18px;
+    }
+    .aboutUs h1{
+        padding-bottom: 19px;
+        font-size: 16px;
+    }
+    .aboutUs p{
+        padding-bottom: 25px;
+        font-size: 12px;
+    }
+
+    /* 
+    
+     =========   CONTACT US START HERE   =========
+    
+    
+    */
+
+    .contact{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 20px 0 0 0;
+        border-radius: 10px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .contact h2{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0;
+    }
+    .contact p{
+        font-family: 'Lato-Light';
+        font-size: 12px;
+        font-weight: 300
+    }
+    .contact strong{
+        font-family: 'Lato-Regular';
+        font-size: 12px!important;
+    }
+
+    .contact form{
+        margin-top: 25px;
+    }
+    .contact form input[type="submit"]{
+        border-radius: 4px;
+        margin: 14px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* 
+    
+     =========   CONTACT US END HERE   =========
+    
+    
+    */
+
+
+
+
+    /* 
+    
+     =========   TERMS OF USE START HERE   =========
+    
+    
+    */
+
+    .terms{
+        width: 100%;
+        padding: 20px 0 20px;
+    }
+    .terms h4{
+        font-size: 14px;
+    }
+    .terms p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .terms .term_container{
+        border-radius: 10px;
+        margin-top: 0;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+    }
+    .terms .icon_holder{
+        width: 42px;
+    }
+    .terms img{
+        height: 10px;
+        padding: 0;
+        margin: 0 auto;
+        
+    }
+    .terms .term_header, .terms .icon_holder, .terms .icon_holder .left_border{
+        height: 50px;
+    }
+    .terms .term_header{
+        padding-left: 16px!important;
+    }
+    .terms .term_body{
+        padding: 15px 18px;
+    }
+
+
+
+
+
+
+    /* 
+    
+     =========   TERMS OF USE ENd HERE   =========
+    
+    
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* subscribe start */
+
+    .subscribe{
+        width: 100%;
+        padding: 30px 15px 32px;
+    }
+
+    .subscribe h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .subscribe p{
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    
+
+  
+    .subscribe  p.success-message {
+        font-size: 12px;
+    }
+    .subscribe form{
+        width: 100%;
+    }
+    .subscribe form input[type="email"]{
+        width: 70%!important;
+        height: 30px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .subscribe form input[type="submit"]{
+        width: 30%!important;
+        height: 30px;
+        font-size: 12px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .subscribe form input[type="email"], .subscribe form input[type="submit"]{
+        float: left;
+    }
+    /* subscribe end */
+
+
+
+
+    /* gamble start*/
+    .gambl{
+        padding: 30px 0px 32px;
+        overflow: hidden;
+    }
+    .gambl .gambl-container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .gambl p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .gambl button{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        color: #c1c1c1;
+        padding: 0;
+    }
+    .gambl button img{
+        padding-left: 11px;
+        transition: .3s;
+    }
+    .rotateIcon{
+        transform: rotate(180deg);
+        padding-right: 11px;
+    }
+
+    /* footer start */
+    footer{
+        width: 100%;
+        height: auto;
+        padding: 12px 0 13px;
+    }
+    footer .footer-links{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    footer .footer-links li{
+        padding-left: 0;
+    }
+    footer .footer-links li a, footer .copyright{
+        font-size: 12px;
+    }
+    footer .copyright{
+        margin-bottom: 0;
+    }
+    footer .first{
+        order: 1;
+    }
+    footer .second{
+        order: 2;
+    }
+
+    footer .f-menu{display: none;}
+
+
+    
+}
+
+
+
+
+
+
+ 
+
+ @media (min-width: 576px) and (max-width: 766px) { 
+    .mini-nav img{
+        width: 25px;
+    }
+    .interior .ratings{
+        justify-content: flex-start!important;
+        margin-left: 28px;
+    }
+    .interior .ratings .rated2{
+       width: 50%!important;
+       margin-left: 120px;
+    }
+    .exterior .ratings{
+        justify-content: space-around!important;
+    } 
+    
+    .exterior .rated2 p{
+        margin-left: 0!important;
+     }
+     .exterior .rated2 a{
+        justify-self: flex-end;
+     }
+    
+  }
+
+
+  @media (max-width: 320px){
+      .interior ul .hotel_logo{
+          padding-left: 0px;
+      }
+      .interior ul .address{
+          padding-left: 10px;
+          padding-right: 0;
+      }
+      .subscribe form input[type="email"]{
+          width: 150px;
+      }
+  }
